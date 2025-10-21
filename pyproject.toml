@@ -1,0 +1,22 @@
+[project]
+name = "first-langgraph-app"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "SrZeAlex",email = "83024037+SrZeAlex@users.noreply.github.com"}
+]
+readme = "README.md"
+requires-python = ">=3.11,<4.0"
+dependencies = [
+    "langgraph (>=1.0.1,<2.0.0)",
+    "langchain (>=1.0.1,<2.0.0)",
+    "langchain-google-genai (>=3.0.0,<4.0.0)",
+    "dotenv (>=0.9.9,<0.10.0)"
+]
+
+[tool.poetry]
+packages = [{include = "first_langgraph_app", from = "src"}]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
