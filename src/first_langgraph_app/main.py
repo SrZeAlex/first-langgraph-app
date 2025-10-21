@@ -4,7 +4,7 @@ from langgraph.graph import StateGraph, END, START
 from langchain_google_genai import ChatGoogleGenerativeAI
 
 # Set your API key
-os.environ["GOOGLE_API_KEY"] = "AIzaSyDWngImUhKFGge2hIn4askNbt1MDlJCKZY"
+os.environ["GOOGLE_API_KEY"] = "Your-KEY-HERE"
 
 # Initialize LLM (using Gemini Flash for speed and cost-efficiency)
 llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash", temperature=0.7)
